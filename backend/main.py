@@ -3,6 +3,7 @@ from core.config import settings
 from db.session import engine
 from db.base import Base
 from apis.base import api_router
+from webapps.base import api_router as webapp_router
 
 
 def create_tables():
@@ -11,6 +12,7 @@ def create_tables():
 
 def include_router(app):
     app.include_router(api_router)
+    app.include_router(webapp_router)
     
 
 def start_application():
@@ -20,8 +22,3 @@ def start_application():
     return app
 
 app = start_application()
-
-
-@app.get("/")
-def hello_api():
-    return {"detail":"Hello World!"}
