@@ -27,3 +27,6 @@ python-multipart
 
 #for template
 jinja2
+
+#for static files
+aiofiles
