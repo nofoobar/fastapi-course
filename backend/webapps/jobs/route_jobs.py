@@ -14,9 +14,9 @@ router = APIRouter(include_in_schema=False)
 
 
 @router.get("/")
-def home(request:Request,db:Session = Depends(get_db)):
+def home(request:Request,db:Session = Depends(get_db),msg:str = None):
     jobs = list_jobs(db=db)
-    return templates.TemplateResponse("jobs/homepage.html",{"request":request,"jobs":jobs})
+    return templates.TemplateResponse("jobs/homepage.html",{"request":request,"jobs":jobs,"msg":msg})
 
 
 @router.get("/detail/{id}")

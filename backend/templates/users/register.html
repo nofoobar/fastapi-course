@@ -1,0 +1,38 @@
+{% extends "shared/base.html" %} 
+
+{% block title %} 
+  <title>Signup to Jobboard</title>
+{% endblock %} 
+
+{% block content %} 
+<div class="container">
+      <h1 class="display-4 text-danger">Signup</h1>
+
+      <div class="text-danger font-weight-bold">
+        {% for error in errors %} 
+          <li>{{error}}</li>
+        {% endfor %}
+      </div>
+
+      <form method="POST">
+          <div class="mb-3">
+              <label>username</label>
+              <input type="text" required class="form-control" name="username"
+              value="{{username}}" placeholder="username">
+          </div>
+          <div class="mb-3">
+            <label>email</label>
+            <input type="email" required class="form-control" name="email"
+            value="{{email}}" placeholder="email">
+        </div>
+        <div class="mb-3">
+            <label>password</label>
+            <input type="password" required class="form-control" name="password"
+            value="{{password}}" placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  
+</div>
+
+{% endblock %}
