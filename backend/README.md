@@ -2,7 +2,7 @@
 A job board app using fastapi
 
 ## Udemy Course Link
-[Udemy FastAPI Course](https://www.udemy.com/course/fastapi-course/?referralCode=866F5B710822DE67352F){:target="_blank"}
+[Udemy FastAPI Course](https://www.udemy.com/course/fastapi-course/?referralCode=866F5B710822DE67352F)
 
 
 ![](backend/static/images/lite.gif)
