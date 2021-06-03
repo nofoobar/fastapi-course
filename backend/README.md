@@ -1,5 +1,5 @@
 # JobBoard-Fastapi 
-A job board app using fastapi
+> A job board app using fastapi
 
 ## Udemy Course Link
 [Udemy FastAPI Course](https://www.udemy.com/course/fastapi-course/?referralCode=866F5B710822DE67352F)
@@ -28,7 +28,7 @@ visit  127.0.0.1:8000/
 ```
 
 Features:
- - ✔️ Course [FastAPI Course](https://www.fastapitutorial.com/blog/fastapi-course/)
+ - ✔️ Course [Udemy FastAPI Course](https://www.udemy.com/course/fastapi-course/?referralCode=866F5B710822DE67352F)
  - ✔️ Serving Template
  - ✔️ Static Files in Development
  - ✔️ Connecting to Database
